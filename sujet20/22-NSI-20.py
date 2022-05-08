@@ -56,6 +56,6 @@ def est_magique(carre):
     if sum([carre.valeurs[k][n-1-k] for k in range(n)]) != s:  # La deuxième diagonale est la liste des éléments d'indices k, n-1-k
             return False  # Le carré n'est pas magique, on renvoie False
     
-    return True  # Si on est arrivé au bout, le carré est magique et on renvoie True   
+    return s  # Si on est arrivé au bout, le carré est magique et on renvoie la valeur de la somme
 
 
